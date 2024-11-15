@@ -1,0 +1,380 @@
+/* reset de la pagina */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* colores */
+
+/*
+
+backround: #949494;
+color: rgb(226, 226, 226) blanco
+hover: rgb(59, 59, 59)
+span: #0048ff
+
+*/
+
+/* header menu navegacion */ 
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7rem;
+    background: linear-gradient(90deg, rgb(59, 59, 59), #949494, #3a7bd5);
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.logo {
+    width: 16rem;
+    height: 6.5rem;
+}
+
+.links {
+    text-decoration: none;
+    margin-left: 4rem;
+    font-size: 2.3rem;
+    color: rgb(226, 226, 226);
+    display: inline-block;
+    transition: 0.8s;
+    transition: transform 0.3s ease;
+}
+
+.links:hover {
+    color: rgb(59, 59, 59);
+    transition: 0.4s;
+    transform: translateY(-0.5rem);
+}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 5rem;
+    cursor: pointer;
+    transition: 0.8s;
+    display: none;
+    color: rgb(226, 226, 226);
+}
+
+.mostrar-menu {
+    order: 1;
+}
+
+.mostrar-menu:hover,
+.esconder-menu:hover {
+    color: rgb(59, 59, 59);
+    transition: 0.4s;
+}
+
+#check {
+    display: none;
+}
+
+/* footer */
+
+footer {
+    padding: 1rem 7rem;
+    background: linear-gradient(90deg, #3a7bd5, #949494, rgb(59, 59, 59));
+    box-shadow: 0 -0.4rem 0.8rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    color: rgb(240, 240, 240);
+}
+
+.contenedor-importante {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description {
+    font-size: 1.5rem;
+    text-align: justify;
+    max-width: 15rem;
+}
+
+.titulo-links {
+    font-size: 2rem;
+}
+
+.links-foot {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: rgb(240, 240, 240);
+    transition: 0.8s;
+}
+
+.links-foot:hover {
+    color: rgb(59, 59, 59);
+    transition: 0.4s;
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    color: rgb(240, 240, 240);
+    padding: 1rem 0;
+}
+
+.logos {
+    width: 3rem;
+    height: 3rem;
+}
+
+.informacion {
+    font-size: 1.5rem;
+    padding: 0 0 0 1rem;
+}
+
+.copyright {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 2rem 0 0 0;
+    border-top: 0.1rem solid rgb(59, 59, 59); 
+    margin-top: 2rem;
+}
+
+/* seccion de inicio */
+
+.fondo {
+    background-image: url(../images/imagen-pruebacp.jfif);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.fondo::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(77, 77, 92, 0.6);
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    color: white;
+    padding: 0 7rem;
+}
+
+.titulo-principal {
+    font-size: 7rem;
+    font-weight: 600;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+.slogan {
+    font-size: 3.5rem;
+    padding: 0 0 4rem 0;
+    font-weight: 600;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(50, 50, 50, 0.5);
+}
+
+span {
+    color: #0048ff;
+    font-weight: 800;
+}
+
+.boton {
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 1.5rem 7rem;
+    align-self: baseline;
+    border: 0.2rem solid rgb(59, 59, 59);
+    border-radius: 50rem;
+    color: rgb(240, 240, 240);
+    transition: 0.8s;
+    animation: bounce 2s infinite;
+    text-shadow: 0 0 0.15rem rgba(255, 255, 255, 0.8);
+}
+
+.boton:hover {
+    background-color: rgba(77, 77, 92, 0.6);
+    transition: 0.8s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-1rem); 
+    }
+}
+
+/* seccion de productos */ 
+
+.productos {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    padding: 1rem;
+    background-color: #4d4d5c;
+}
+
+#seccion {
+    width: 50%; 
+    position: relative;
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    transition: transform 0.5s ease, z-index 0.5s ease; 
+    z-index: 1; 
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 1); 
+    border-radius: 1.5rem; 
+    margin: 1rem; 
+}
+
+#seccion:hover {
+    transform: scale(1.1); 
+    z-index: 100; 
+    transition: transform 0.5s ease, z-index 0s; 
+    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.3); 
+}
+
+.section-bg:first-of-type {
+    background-image: url("../images/yeyyeye.jfif"); 
+    filter: brightness(0.9); 
+}
+
+.section-bg:nth-of-type(2) {
+    background-image: url("../images/imagencpb.jfif"); 
+    filter: brightness(0.9); 
+}
+
+.navegar {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    color: rgb(59, 59, 59);
+    font-size: 2rem;
+}
+
+/* responsive */ 
+
+@media screen and (max-width: 767px) {
+
+    /* header */
+
+    header {
+        padding: 1rem 2rem;
+    }
+    
+    /* footer */
+
+    footer {
+        padding: 1rem 2rem;
+    }
+
+    .contenedor-importante {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .nav-foot {
+        display: none;
+    }
+
+    /* seccion de inicio */
+
+    .contenedor {
+        padding: 0 2rem;
+    }
+
+    .titulo-principal {
+        font-size: 4.3rem;
+    }
+
+    .slogan {
+        font-size: 2rem;
+        padding: 0 0 3rem 0;
+    }
+
+    .boton {
+        
+        font-size: 1.9rem;
+    }
+
+    /* seccion de productos */
+
+    .productos {
+        flex-direction: column;
+    }
+
+    #seccion {
+        width: 100%;
+        height: 50vh;
+        margin: 2rem 0;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* header */
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #4d4d5c;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 10rem 0;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .links {
+        display: block;
+        padding: 2rem;
+    }
+
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+
+    .esconder-menu {
+        position: absolute;
+        top: 3.5rem;
+        right: 7rem;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
+    }
+
+}
