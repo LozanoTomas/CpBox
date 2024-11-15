@@ -78,7 +78,7 @@ header {
 
 .mostrar-menu,
 .esconder-menu {
-    font-size: 5rem;
+    font-size: 3rem;
     cursor: pointer;
     transition: 0.8s;
     display: none;
@@ -477,12 +477,16 @@ span {
     /* seccion oficinas/obradores */
 
     .contenedor-caracteristicas {
-        padding: 5rem 2rem;
+        padding: 2rem;
+    }
+
+    .btn-volver {
+        display: none;
     }
 
     #carouselExampleIndicators {
-        width: 40rem;
-        height: 30rem;
+        width: 30rem;
+        height: 25rem;
     }
 
 }
