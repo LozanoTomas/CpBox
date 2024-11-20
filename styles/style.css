@@ -221,7 +221,7 @@ footer {
 }
 
 span {
-    color: #002fff;
+    color: #004ff8;
     font-weight: 800;
 }
 
@@ -428,9 +428,157 @@ span {
     box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.3);
 }
 
-/* probando */
+/* seccion de nosotros */
 
+.parallax {
+    background-image: url(../images/gancho-grua-contenedor-azul-carga-texto_35761-364.jpg); 
+    height: 35vh; 
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.main-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 8rem 7rem;
+    background-image: linear-gradient(to left bottom, #949494, #8f8e9f, #8688ab, #7a83b7, #677fc4, #627abf, #5c75b9, #5770b4, #5f699c, #616384, #5f5e6e, #595959);
+    color: rgb(240, 240, 240);
+}
+
+.titulo-nosotros {
+    font-size: 5rem;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+}
+
+.descripciones {
+    font-size: 1.8rem;
+    max-width: 105rem;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/*.subtitulo-nosotros {
+    font-size: 3rem;
+    font-weight: 600;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(50, 50, 50, 0.5);
+    text-align: center;
+    padding: 0 0 2rem 0;
+}*/
+
+.tarjetas-contenedor {
+    display: flex;
+    padding: 8rem 7rem;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: rgb(240, 240, 240);
+    background-image: linear-gradient(to right bottom, #949494, #8f8e9f, #8688ab, #7a83b7, #677fc4, #627abf, #5c75b9, #5770b4, #5f699c, #616384, #5f5e6e, #595959);
+}
+
+.tarjeta {
+    display: inline-block;
+    align-items: center;
+    padding: 1rem;
+    max-width: 35rem;
+}
+
+.icon-back {
+    display: inline-block;
+    padding: 3.5rem;
+    border-radius: 50%;
+    background-color: #4d4d5c;
+    margin-bottom: 1rem;
+}
+
+.icono {
+    width: 8rem;
+    height: 8rem;
+}
+
+.descripcion-icon {
+    font-size: 1.8rem;
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+
+/* seccion contacto */
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    color: rgb(240, 240, 240);
+}
+
+form {
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+    background-color: #4d4d5c;
+}
+
+.contacto-titulo {
+    font-size: 4rem;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea{
+    padding: 1rem 2.5rem;
+    margin: 1rem 0.5rem;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #627abf;
+    font-size: 1.5rem;
+}
+
+.btn {
+    font-size: 1.8rem;
+    border: 0;
+    background-color: #5770b4;
+    cursor: pointer;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+    color: rgb(240, 240, 240);
+}
+
+.btn:hover {
+    background-color: #5f699c;
+}
+
+label {
+    font-size: 1.8rem;
+    padding: 1rem 0.5rem;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+}
+
+.input-item {
+    display: flex;
+    flex-direction: column;
+}
+
+#maill {
+    display: none;
+}
 
 /* responsive */ 
 
@@ -496,17 +644,36 @@ span {
         padding: 2rem;
     }
 
-    .carrousel {
+    .carrou {
         padding: 2rem 0 0 0;
-    }
-
-    #carouselExampleIndicators {
-        max-width: 100%;
-        max-height: 100%;
     }
 
     .btn-volver {
         display: none;
+    }
+
+    /* seccion nosotros */
+
+    .main-nosotros {
+        padding: 2rem;
+    }
+
+    .tarjetas-contenedor {
+        padding: 2rem;
+    }
+
+    /* seccion contacto */
+
+    .formulario {
+        padding: 4rem 2rem;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .row {
+        display: block;
     }
 
 }

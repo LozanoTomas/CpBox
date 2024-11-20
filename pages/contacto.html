@@ -6,7 +6,7 @@
     <style>@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');</style>
     <link rel="icon" href="../icons/logo 6.jpg">
     <link rel="stylesheet" href="../styles/style.css">
-    <title>CP-BOX Productos</title>
+    <title>CP-BOX Contacto</title>
 </head>
 <body>
     <header>
@@ -26,23 +26,32 @@
             </label>
         </nav>
     </header>
-    <main class="productos">
-        <section class="section-bg" id="seccion">
-            <a href="../pages/oficinas.html">
-                <div class="navegar">
-                    <h2>Oficinas y Módulos Habitacionales</h2>
-                    <p>Saber Más</p>
+    <main class="formulario">
+        <form action="" id="form">
+            <h1 class="contacto-titulo">Cotizá con nosotros</h1>
+            <div class="input-group">
+                <div class="row">
+                    <div class="input-item">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" placeholder="Nombre" required>
+                    </div>
+                
+                    <div class="input-item">
+                        <label for="subname">Apellido</label>
+                        <input type="text" name="subname" id="subname" placeholder="Apellido" required>
+                    </div>
                 </div>
-            </a>
-        </section>
-        <section class="section-bg" id="seccion">
-            <a href="../pages/obradores.html">
-                <div class="navegar">
-                    <h2>Obradores y Pañoles</h2>
-                    <p>Saber Más</p>
-                </div>
-            </a>
-        </section>
+
+                <label for="email">E-Mail</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" placeholder="Mensaje"></textarea required>
+
+                <input class="btn" type="submit" value="Enviar">
+            </div>
+        </form>
+        <a href="mailto:lozanotdlc@gmail.com" id="maill">contacto</a>
     </main>
     <footer>
         <div class="contenedor-importante">
@@ -79,5 +88,6 @@
             <p>© 2024 CP-BOX. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="../js/contacto.js"></script>
 </body>
 </html>
