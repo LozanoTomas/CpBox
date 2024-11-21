@@ -324,6 +324,7 @@ span {
     gap: 2rem;
     justify-content: center;
     width: 50%;
+    animation: aparecer 1s ease-out forwards;
 }
 
 .titulo-seccion {
@@ -435,7 +436,7 @@ span {
 
 .parallax {
     background-image: url(../images/gancho-grua-contenedor-azul-carga-texto_35761-364.jpg); 
-    height: 20vh; 
+    height: 25vh; 
     background-attachment: fixed; 
     background-position: center;
     background-size: cover;
@@ -455,6 +456,14 @@ span {
     font-size: 5rem;
     text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
     font-weight: 600;
+    opacity: 0; 
+    transform: translateX(100%); 
+    transition: all 0.8s ease; 
+}
+
+.titulo-nosotros.visible {
+    opacity: 1; 
+    transform: translateX(0); 
 }
 
 .descripciones {
@@ -462,6 +471,7 @@ span {
     max-width: 105rem;
     text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
     text-align: center;
+    animation: aparecer 1s ease-out forwards;
 }
 
 /*.subtitulo-nosotros {
@@ -487,6 +497,14 @@ span {
     align-items: center;
     padding: 1rem;
     max-width: 35rem;
+    opacity: 0;
+    transform: translateY(2rem); 
+    transition: all 0.5s ease;
+}
+
+.tarjeta.aparecer {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .icon-back {
@@ -589,10 +607,12 @@ input::placeholder, textarea::placeholder {
     cursor: pointer;
     text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
     color: rgb(240, 240, 240);
+    transition: 0.8s;
 }
 
 .btn:hover {
     background-color: #336bb9;
+    transition: 0.4s;
 }
 
 label {

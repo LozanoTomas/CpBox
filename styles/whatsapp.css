@@ -26,3 +26,10 @@
 .my-float{
 	margin-top:16px;
 }
+
+@media screen and (max-width: 767px) {
+	.float {
+		bottom: 20px;
+		right: 20px;
+	}
+}
