@@ -4,4 +4,3 @@ const typed = new Typed(".auto-type", {
     backSpeed: 50,
     loop: true,
 })
-
