@@ -170,7 +170,7 @@ footer {
 /* seccion de inicio */
 
 .fondo {
-    background-image: url(../images/imagen-pruebacp.jfif);
+    background-image: url(../images/imagen-pruebacpbajacalidad.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -195,7 +195,7 @@ footer {
 }
 
 .titulo-principal {
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: 600;
     text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
     animation: aparecer 1s ease-out forwards;
@@ -293,12 +293,12 @@ span {
 }
 
 .section-bg:first-of-type {
-    background-image: url("../images/imagencpbox.jfif"); 
+    background-image: url("../images/imagencpbox.jpg"); 
     filter: brightness(0.9); 
 }
 
 .section-bg:nth-of-type(2) {
-    background-image: url("../images/imagencpb.jfif"); 
+    background-image: url("../images/imagen-pruebacpbajacalidad.jpg"); 
     filter: brightness(0.9); 
 }
 
@@ -568,7 +568,7 @@ span {
 .contacto-contenedor {
     display: flex;
     flex-direction: column;
-    background-image: url(../images/imagen-pruebacp.jfif);
+    background-image: url(../images/imagen-pruebacpbajacalidad.jpg);
     background-position: center;
     background-size: cover;
     color: rgb(240, 240, 240);
@@ -796,7 +796,7 @@ label {
 
     .formulario {
         width: 100%;
-        padding: 2rem;
+        padding: 3rem;
     }
 
     form {
